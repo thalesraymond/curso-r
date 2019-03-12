@@ -19,3 +19,7 @@ base$age = ifelse(base$age < 0, age_mean, base$age)
 rows_with_na_age = base[is.na(base$age), ]
 
 base$age = ifelse(is.na(base$age), age_mean, base$age)
+
+#padronizing data
+
+base[ ,1:3] = scale(base[ ,1:3])
