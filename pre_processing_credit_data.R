@@ -1,6 +1,6 @@
 base = read.csv('credit-data.csv')
 
-base$clientid = NULL
+clientid = NULL
 
 summary(base)
 
@@ -16,10 +16,29 @@ base$age = ifelse(base$age < 0, age_mean, base$age)
 
 # fix rows with NA ages
 
-rows_with_na_age = base[is.na(base$age), ]
-
 base$age = ifelse(is.na(base$age), age_mean, base$age)
 
-#padronizing data
+# padronizing data
 
-base[ ,1:3] = scale(base[ ,1:3])
+base[ ,1:3] = scale(base[ ,1:3]) 
+
+library(caTools)
+
+# Set random seed
+
+set.seed(1)
+
+# Define training sample
+
+division = sample.split(base$default, SplitRatio = 0.75)
+
+# Save training sample
+
+training_base = subset(base, division == TRUE)
+
+# Save test base
+
+test_base = subset(base, division == FALSE)
+
+
+
