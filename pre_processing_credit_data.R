@@ -1,6 +1,6 @@
 base = read.csv('credit-data.csv')
 
-clientid = NULL
+base$clientid = NULL
 
 summary(base)
 
@@ -39,6 +39,12 @@ training_base = subset(base, division == TRUE)
 # Save test base
 
 test_base = subset(base, division == FALSE)
+
+# Encode training and test bases classes
+
+training_base$default = factor(training_base$default, levels = c(0,1))
+
+test_base$default = factor(test_base$default, levels = c(0,1))
 
 
 
