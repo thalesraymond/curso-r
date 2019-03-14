@@ -12,3 +12,11 @@ Decision Tree results Credit Data
 0.97 - Factor + Scale
 0.97 - Factor Onlye
 0.968 - No scales and no factor
+
+------------
+
+Decision Tree results Census
+
+0.8351 - Factor + Scale
+0.8351 - Factor Onlye
+0.8351 - No scales and no factor

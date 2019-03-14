@@ -1,5 +1,5 @@
 # Run pre processing
-source('pre_processing_credit_data.R')
+source('pre_processing_census.R')
 
 # Load libs
 library(rpart)
@@ -9,16 +9,16 @@ library(rpart.plot)
 library(caret)
 
 # Create decision tree
-classificator = rpart(formula = default ~ ., data = training_base)
+classificator = rpart(formula = income ~ ., data = training_base)
 
 # Plot tree
 rpart.plot(classificator)
 
 # Run the tree in the test database
-risk_predict = predict(classificator,newdata = test_base[-4], type='class')
+census_predict = predict(classificator, newdata = test_base[-15], type = 'class')
 
 #Create the confusion matrix
-confusion_matrix = table(test_base[, 4], risk_predict)
+confusion_matrix = table(test_base[, 15], census_predict)
 
 #Analyze confusion matrix
 confusionMatrix(confusion_matrix)
