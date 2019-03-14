@@ -1,6 +1,0 @@
-Census results based on pre-processing
-
-0.8214 - Factor + Scale
-0.8216 - Factor Onlye
-0.8214 - Scale Only
-0.8216 - No scales and no factor

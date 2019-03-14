@@ -10,6 +10,6 @@ census_predict = predict(classificator, newdata = test_base[-15])
 
 confusion_matrix = table(test_base[, 15], census_predict)
 
-library(carret)
+library(caret)
 
 confusionMatrix(confusion_matrix)

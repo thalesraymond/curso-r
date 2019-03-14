@@ -22,6 +22,9 @@ base$age = ifelse(is.na(base$age), age_mean, base$age)
 
 base[ ,1:3] = scale(base[ ,1:3]) 
 
+#Encode class value
+base$default = factor(base$default, levels = c(0,1))
+
 library(caTools)
 
 # Set random seed
