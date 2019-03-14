@@ -11,6 +11,13 @@ library(caret)
 # Create decision tree
 classificator = rpart(formula = income ~ ., data = training_base)
 
+# Pruning example (not necessary)
+prune = classificator$cptable[which.min(classificator$cptable[,'xerror']), 'CP']
+
+print(classificator$cptable)
+
+prune(classificator,0.05)
+
 # Plot tree
 rpart.plot(classificator)
 
