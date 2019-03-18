@@ -7,3 +7,7 @@ install.packages('caret')
 install.packages('rpart')
 
 install.packages('rpart.plot')
+
+install.packages('randomForest')
+
+install.packages('OneR')
