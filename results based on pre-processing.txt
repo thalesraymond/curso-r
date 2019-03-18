@@ -28,3 +28,9 @@ Random Forest - Credit Data
 0.99 - Factor + Scale + 40 Trees
 0.99 - Factor Onlye
 0.99 - No scale and no factor
+
+-------------
+
+CN2 - Credit Data
+
+0.938 :D No difference betweeen pre-processing style

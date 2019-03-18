@@ -11,3 +11,5 @@ install.packages('rpart.plot')
 install.packages('randomForest')
 
 install.packages('OneR')
+
+install.packages('RoughSets')
