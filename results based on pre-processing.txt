@@ -34,3 +34,10 @@ Random Forest - Credit Data
 CN2 - Credit Data
 
 0.938 :D No difference betweeen pre-processing style
+
+-------------
+
+KNN - Credit Data
+
+0.834 - No scales (terrible :( )
+0.974 - With scales (wow much performance)

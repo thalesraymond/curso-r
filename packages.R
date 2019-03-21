@@ -13,3 +13,5 @@ install.packages('randomForest')
 install.packages('OneR')
 
 install.packages('RoughSets')
+
+install.packages('class')
