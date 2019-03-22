@@ -1,0 +1,28 @@
+SVM - Credit Data Performance
+
+Default Cost (1)
+
+0.948 - Linear
+0.966 - polynomial
+0.978 - Radial
+0.846 - Sigmoid
+
+Tuned Cost (6)
+
+0.988 - Radial
+
+Crazy Cost(60)
+
+0.99 - Radial
+
+
+
+
+SVM - census Performance
+
+Default Cost (1)
+
+0.838 - Linear
+0.778 - polynomial
+0.841 - Radial
+0.836 - Sigmoid
