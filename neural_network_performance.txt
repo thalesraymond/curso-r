@@ -1,0 +1,10 @@
+Credit Data:
+0.994 - Scales + Factor
+0.998 - Only Factor
+0.994 - No Pre-processing
+
+Census:
+
+0.8269 - Scales + Factor
+ - Only Factor
+ - No Pre-processing

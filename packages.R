@@ -15,3 +15,5 @@ install.packages('OneR')
 install.packages('RoughSets')
 
 install.packages('class')
+
+install.packages('h2o')
