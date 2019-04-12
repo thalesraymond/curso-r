@@ -13,7 +13,7 @@ regressor = lm(formula = price ~ sqft_living, data = training_base)
 
 regressor_summary = summary(regressor)
 
-regression_predict = predict(regressor, newdata = training_base[6])
+regression_predict = predict(regressor, newdata = test_base[6])
 
 library(ggplot2)
 
