@@ -17,3 +17,7 @@ install.packages('RoughSets')
 install.packages('class')
 
 install.packages('h2o')
+
+install.packages('ggplot2')
+
+install.packages('miscTools')
