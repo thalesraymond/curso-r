@@ -21,3 +21,5 @@ install.packages('h2o')
 install.packages('ggplot2')
 
 install.packages('miscTools')
+
+install.packages('arules')
