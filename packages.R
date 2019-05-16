@@ -25,3 +25,5 @@ install.packages('miscTools')
 install.packages('arules')
 
 install.packages('dbscan')
+
+install.packages('kernlab')
