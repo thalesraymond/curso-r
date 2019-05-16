@@ -23,3 +23,5 @@ install.packages('ggplot2')
 install.packages('miscTools')
 
 install.packages('arules')
+
+install.packages('dbscan')
